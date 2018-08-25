@@ -42,12 +42,11 @@ class Stack():
 print("Enter a string required to perform reverse operation")
 str = input()
 stack = Stack()
-rev = []
+rev = ""
 for character in str:
     stack.push(character)
 
 for i in range(len(str)):
-    rev.append(stack.pop())
+    rev+=stack.pop()
 
-for revchar in rev:
-    print(revchar)
+print(rev)
